@@ -1,0 +1,36 @@
+.team-container img{
+    width: 100%;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.team-img{
+    position: relative;
+}
+.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 99%;
+    overflow: hidden;
+    opacity: 0;
+}
+.team-img:hover .layover{
+    opacity: 1;
+}
+.client{
+    padding: 150px 0 100px;
+}
+.client-container img{
+    width: 100px;
+}
+.client-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, ));
+}
